@@ -1,1 +1,125 @@
+*{ 
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 
+}
+
+body {
+    background: #f4f4f9;
+    color: #222;
+    padding: 20px;
+}
+
+
+section {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #004aad;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 4px solid #004aad;
+}
+
+
+  h2 {
+    border-left: 6px solid #004aad;
+    padding-left: 10px;
+    color: #004aad;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.links a {
+    font-size: 18px;
+    color: #004aad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #004aad;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+form input[type="submit"] {
+    background: #004aad;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #003680;
+}
+
+
+input[type="checkbox"] {
+    width: au
+
+}
