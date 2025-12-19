@@ -3,50 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HOJA DE VIDA</title>
+    <title>Hoja de Vida</title>
 </head>
+
 <body>
-    <section>
-    <header>
-        <h1>HOJA DE VIDA</h1>
-        <img src="img/imagen.jpg" width="280 px" height="280">
-    </header>
 
-    </section>
-    <section>
-     <article>
-        <h2>INFORMACION GENERAL</h2>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero distinctio magni deserunt laborum asperiores ratione eaque, veritatis dolore doloremque unde sint ea nemo id sapiente quaerat. Animi, odit dignissimos!</P>
-     </article>
-    </section>
+<section>
 
+    <div id="contacto">
+        <h1>Formulario de Contacto</h1>
 
-    <section>
-     <article>
-        <h2>EXPERIENCIA LABORAL</h2>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero distinctio magni deserunt laborum asperiores ratione eaque, veritatis dolore doloremque unde sint ea nemo id sapiente quaerat. Animi, odit dignissimos!</P>
-     </article>
-    </section>
+        <form>
+            <h3>Datos Personales</h3>
 
+            <label>Nombre</label><br>
+            <input type="text" name="nombre" required><br><br>
 
-    <section>
-     <article>
-        <h2>COMPETENCIAS</h2>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero distinctio magni deserunt laborum asperiores ratione eaque, veritatis dolore doloremque unde sint ea nemo id sapiente quaerat. Animi, odit dignissimos!</P>
-     </article>
-    </section>
-    <h3>COMPETENCIAS</h3>
-    <ul>
-        <li>HTML</li>
-        <li>PYTHON</li>
-        <LI>CSS</LI>
-    </ul>
+            <label>Apellido</label><br>
+            <input type="text" name="apellido" required><br><br>
 
-    <ol> 
-    <h3>HABILIDADES</h3>
-        <li>COMUNICACION EFECTIVA</li>
-        <li>TRABAGO EN EQUIPO</li>
-        <LI>CUMPLIMIENTO DE TEMAS</LI>
-    </ol>
+            <label>Tipo de Identificación</label><br>
+            <select name="tipo_identificacion" required>
+                <option value="CC">Cédula de Ciudadanía (CC)</option>
+                <option value="TI">Tarjeta de Identidad (TI)</option>
+                <option value="PA">Pasaporte (PA)</option>
+            </select><br><br>
+
+            <label>Número de Identificación</label><br>
+            <input type="text" name="numero_identificacion" required><br><br>
+
+            <label>Fecha de Nacimiento</label><br>
+            <input type="date" name="fecha_nacimiento" required><br><br>
+
+            <label>Número de Celular</label><br>
+            <input type="tel" name="celular" required><br><br>
+
+            <h3>Consentimiento</h3>
+            <input type="checkbox" name="politica_datos" required>
+            Acepto la política de tratamiento de datos.<br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <br>
+        <a href="#cv">← Volver a la Hoja de Vida</a>
+    </div>
+
+    <hr>
+
+    <div id="cv">
+        <header>
+            <h1>HOJA DE VIDA</h1>
+            <img src="img/imagen.jpg" alt="Foto de perfil">
+        </header>
+
+        <h2>Información Académica</h2>
+        <p>
+            Soy una persona responsable enfocada en el aprendizaje continuo
+            y en el desarrollo de nuevas habilidades en el campo de la tecnología.
+        </p>
+
+        <h2>Experiencia Laboral</h2>
+        <p>
+            He participado en la creación de proyectos básicos utilizando HTML,
+            CSS y JavaScript, aplicando buenas prácticas.
+        </p>
+
+        <h2>Competencias</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h2>Habilidades</h2>
+        <ol>
+            <li>Trabajo en equipo</li>
+            <li>Comunicación efectiva</li>
+            <li>Cumplimiento de tareas</li>
+        </ol>
+
+        <a href="#contacto">Formulario de Contacto</a><br><br>
+
+        <a href="https://mosquerakevinsantiago.github.io/Bitacora" target="_blank">
+            Ver Bitácora
+        </a>
+    </div>
+
+</section>
+
+</body>
+</html>
+DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="css/style.css.css">
+    
+
+</head>
+
+<body>
+
+<section>
+
+    <div id="contacto" class="pantalla">
+        <h1>Formulario de Contacto</h1>
+
+        <form>
+            <h3>Datos Personales</h3>
+
+            <label>Nombre</label>
+            <input type="text" name="nombre" required>
+
+            <label>Apellido</label>
+            <input type="text" name="apellido" required>
+
+            <label>Tipo de Identificación</label>
+            <select name="tipo_identificacion" required>
+                <option value="CC">Cédula de Ciudadanía (CC)</option>
+                <option value="TI">Tarjeta de Identidad (TI)</option>
+                <option value="PA">Pasaporte (PA)</option>
+            </select>
+
+            <label>Número de Identificación</label>
+            <input type="text" name="numero_identificacion" required>
+
+            <label>Fecha de Nacimiento</label>
+            <input type="date" name="fecha_nacimiento" required>
+
+            <label>Número de Celular</label>
+            <input type="tel" name="celular" required>
+
+            <h3>Consentimiento</h3>
+            <input type="checkbox" name="politica_datos" required>
+            Acepto la política de tratamiento de datos.
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <a href="#cv" class="btn">← Volver a la Hoja de Vida</a>
+    </div>
+
+    <div id="cv" class="pantalla">
+        <header>
+            <h1>HOJA DE VIDA</h1>
+            <img src="img/kevin.jpg">
+        </header>
+
+        <h2>Información Académica</h2>
+        <p>
+            Soy una persona responsable
+            enfocada en el aprendizaje
+            continuo y en el desarrollo
+            de nuevas habilidades en
+            el campo de la tecnología. Me
+            interesa comprender cómo
+            funcionan los sistemas,
+            mejorar procesos y crear
+            soluciones útiles mediante el
+            desarrollo web.
+        </p>
+
+        <h2>Experiencia Laboral</h2>
+        <p>
+            He participado en la creación
+           de proyectos básicos 
+           utilizando HTML, CSS y JavaScript,
+           aplicando buenas práctica
+           También he trabajado en 
+           proyectos académicos que
+           requieren
+            trabajo en equipo y
+            resolución de problemas.
+        </p>
+
+        <h2>Competencias</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <article>
+            <h2>HABILIDADES</h2>
+            <ol>
+                <li>Trabajo en equipo</li>
+                <li>Comunicación efectiva</li>
+                <li>Cumplimiento de tareas</li>
+            </ol>
+        </article>
+
+        <a href="#contacto" class="btn">Formulario de Contacto</a>
+
+        <a href="https://mosquerakevinsantiago.github.io/Bitacora" target="_blank" class="btn">
+            Ver Bitácora
+        </a>
+    </div>
+
+</section>
+
 </body>
 </html>
