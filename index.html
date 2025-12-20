@@ -3,62 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de Vida</title>
+    <title>CV Kevin santiago</title>
     <link rel="stylesheet" href="css/style.css.css">
-    
 </head>
-
 <body>
 
-<section>
-
-    <div id="contacto" class="pantalla">
-        <h1>Formulario de Contacto</h1>
-
-        <form>
-            <h3>Datos Personales</h3>
-
-            <label>Nombre</label>
-            <input type="text" name="nombre" required>
-
-            <label>Apellido</label>
-            <input type="text" name="apellido" required>
-
-            <label>Tipo de Identificación</label>
-            <select name="tipo_identificacion" required>
-                <option value="CC">Cédula de Ciudadanía (CC)</option>
-                <option value="TI">Tarjeta de Identidad (TI)</option>
-                <option value="PA">Pasaporte (PA)</option>
-            </select>
-
-            <label>Número de Identificación</label>
-            <input type="text" name="numero_identificacion" required>
-
-            <label>Fecha de Nacimiento</label>
-            <input type="date" name="fecha_nacimiento" required>
-
-            <label>Número de Celular</label>
-            <input type="tel" name="celular" required>
-
-            <h3>Consentimiento</h3>
-            <input type="checkbox" name="politica_datos" required>
-            Acepto la política de tratamiento de datos.
-
-            <input type="submit" value="Enviar">
-        </form>
-
-        <a href="#cv" class="btn">← Volver a la Hoja de Vida</a>
-    </div>
-
-    <div id="cv" class="pantalla">
+    <section class="hoja-vida-container">
+        
         <header>
-            <h1>HOJA DE VIDA</h1>
-            <img src="img/kevin.jpg" alt="Foto de perfil">
+            <div class="boton-container">
+                <a href="#contacto" class="btn">Formulario de Contacto</a>
+            </div>
+
+            <div class="perfil">
+                <img src="img/kevin.jpg">
+                <h1>HOJA DE VIDA</h1>
+            </div>
         </header>
 
-        <h2>Información Académica</h2>
-        <p>
-            Soy una persona responsable
+        <article class="seccion-info">
+            <h2>Información Academica</h2>
+            <p>Soy una persona responsable
             enfocada en el aprendizaje
             continuo y en el desarrollo
             de nuevas habilidades en
@@ -67,12 +32,15 @@
             funcionan los sistemas,
             mejorar procesos y crear
             soluciones útiles mediante el
-            desarrollo web.
-        </p>
+           desarrollo web..</p> 
+        </article>
 
-        <h2>Experiencia Laboral</h2>
-        <p>
-            He participado en la creación
+        <hr class="separador">
+
+        <article class="seccion-info">
+            <h2>Experiencia Laboral</h2>
+
+            <p>He participado en la creación
            de proyectos básicos 
            utilizando HTML, CSS y JavaScript,
            aplicando buenas práctica
@@ -80,33 +48,51 @@
            proyectos académicos que
            requieren
             trabajo en equipo y
-            resolución de problemas.
-        </p>
-
-        <h2>Competencias</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-
-        <article>
-            <h2>HABILIDADES</h2>
-            <ol>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación efectiva</li>
-                <li>Cumplimiento de tareas</li>
-            </ol>
+            resolución de problemas.. </p>
         </article>
 
-        <a href="#contacto" class="btn">Formulario de Contacto</a>
+        <hr class="separador">
 
-        <a href="https://mosquerakevinsantiago.github.io/Bitacora" target="_blank" class="btn">
-            Ver Bitácora
-        </a>
-    </div>
+        <article class="seccion-info">
+            <div class="dos-columnas">
+                <div class="columna">
+                    <h2>Competencias</h2>
+                    <p>Desarrollo web enfocado en estándares modernos.</p>
+                    
+                    <p>Puedes ver mi progreso en mi Bitacora: <br>
+                        <a href="https://mosquerakevinsantiago.github.io/Bitacora" target="_blank" class="btn"></a>
+                    </p>
 
-</section>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>JavaScript</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="columna">
+                    <h2>Habilidades</h2>
+                    <ol>
+                        <li>Trabajo en Equipo</li>
+                        <li>Comunicación Efectiva</li>
+                        <li>Cumplimiento de metas</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <hr>
+            <div class="footer-content">
+                <h3>Contacto Directo</h3>
+                <p><strong>Kevin santiago mosquera perea</strong></p>
+                <p>📧 <a href="mosqueraperea496@gmail.com">mosqueraperea496@gmail.com</a></p>
+                <p>📱 3215631580</p>
+                <p class="small">© 2025 Proyecto Final</p>
+            </div>
+        </footer>
+
+    </section>
 
 </body>
 </html>
