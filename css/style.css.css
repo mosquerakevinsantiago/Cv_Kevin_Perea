@@ -7,7 +7,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4; 
-    color: #22bec6;
+    color: #3a31b9;
     line-height: 1.6;
     padding: 20px;
 }
@@ -95,7 +95,7 @@ h2 {
 
 
 .link-bitacora {
-    color: #0095b3;
+    color: #0030b3;
     font-weight: bold;
     text-decoration: none;
 }
@@ -131,7 +131,7 @@ footer {
     margin-top: 40px;
     text-align: center;
     font-size: 0.9em;
-    color: #43a8f0;
+    color: #1a1b1d;
 }
 
 footer a {
