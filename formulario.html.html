@@ -2,40 +2,61 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="css/formulario.css">
 </head>
 <body>
-  <h1>Formulario de Contacto</h1>
-
-  <form>
-    <label>Nombre:</label><br>
-    <input type="text" name="nombre"><br><br>
-
-    <label>Apellido:</label><br>
-    <input type="text" name="apellido"><br><br>
-
-    <label>Tipo de Identificación:</label><br>
-    <select name="tipo_identificacion">
+ 
+  <form action="https://formsubmit.co/mosqueraperea555gmail.com" method="POST">
+    <h1>Formulario de Contacto</h1>
+ 
+    <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+ 
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br><br>
+ 
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido"><br><br>
+ 
+    <label for="tipo_identificacion">Tipo de Identificación:</label><br>
+    <select id="tipo_identificacion" name="tipo_identificacion">
       <option value="CC">Cédula de Ciudadanía (CC)</option>
       <option value="TI">Tarjeta de Identidad (TI)</option>
       <option value="PA">Pasaporte (PA)</option>
     </select><br><br>
-
-    <label>Número de Identificación:</label><br>
-    <input type="text" name="numero_identificacion"><br><br>
-
-    <label>Fecha de Nacimiento:</label><br>
-    <input type="date" name="fecha_nacimiento"><br><br>
-
-    <label>Número de Celular:</label><br>
-    <input type="tel" name="celular"><br><br>
-
-    <input type="checkbox" name="politica_datos"> Acepto la política de tratamiento de datos.<br><br>
-
-    <input type="submit" value="Enviar">
+ 
+    <label for="numero_identificacion">Número de Identificación:</label><br>
+    <input type="text" id="numero_identificacion" name="numero_identificacion"><br><br>
+ 
+    <label for="pais_domicilio">País de domicilio o ciudad predeterminada:</label><br>
+    <select id="pais_domicilio" name="pais_domicilio">
+      <option value="Colombia">Colombia (Bogotá D.C)</option>
+      <option value="Japon">Japón (Tokio)</option>
+      <option value="China">China (Shanghái)</option>
+    </select><br><br>
+ 
+    <label for="numero_telefono">Número de Teléfono:</label><br>
+    <input type="text" id="numero_telefono" name="numero_telefono"><br><br>
+ 
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+ 
+ 
+    <label for="correo_electronico">Ingresa tu correo electrónico:</label><br>
+    <input type="email" id="correo_electronico" name="correo_electronico"><br><br>
+ 
+    <label>
+      <input type="checkbox" name="tratamiento_datos" required>
+      Autorizo el tratamiento de mis datos personales de acuerdo con la política de privacidad.
+    </label><br><br>
+ 
+    <input type="submit" value="Enviar"><br><br>
+ 
+    <a href="index.html" class="button">Volver a la página principal</a>
   </form>
-   
-
-   <a href="index.html" class=button>volver a la pagina principal</a>
 </body>
 </html>
+ 
