@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #1d4ed8;
+    --primary-light: #2563eb;
+    --primary-dark: #163a9c;
+    --background: #f4f7fb;
+    --white: #ffffff;
+    --text: #111827;
+    --text-secondary: #64748b;
+    --text-light: #94a3b8;
+    --border: #dbe2ea;
+    --danger: #dc2626;
+    --radius: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.08), transparent 30%),
+        radial-gradient(circle at 90% 90%, rgba(14, 165, 233, 0.07), transparent 30%),
+        var(--background);
+    padding: 50px 20px;
+}
+
+#cabecera-principal {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+#titulo-principal {
+    display: inline-block;
+    font-size: clamp(30px, 5vw, 42px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+#titulo-principal::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 20px;
+    background: linear-gradient(90deg, var(--primary), #38bdf8);
+}
+
+#contenido-principal {
+    width: 100%;
+}
+
+#formulario-registro {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px;
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.10);
+    overflow: hidden;
+    animation: aparecer 0.6s ease-out;
+}
+
+#formulario-registro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #1d4ed8, #2563eb, #06b6d4);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input:not([type="checkbox"]),
+.form-group select {
+    width: 100%;
+    min-height: 50px;
+    padding: 13px 15px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: #fff;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.form-group input::placeholder {
+    color: var(--text-light);
+}
+
+.form-group input:not([type="checkbox"]):focus,
+.form-group select:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.10);
+    transform: translateY(-1px);
+}
+
+.form-group input:not([type="checkbox"]):hover,
+.form-group select:hover {
+    border-color: #b8c4d3;
+}
+
+#tipo_identificacion,
+#nacimiento {
+    cursor: pointer;
+}
+
+#grupo-tratamiento-datos {
+    grid-column: 1 / -1;
+    margin-top: 5px;
+    padding: 25px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    border: 1px solid #e2e8f0;
+}
+
+#titulo-tratamiento {
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+#enlace-terminos {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+#enlace-terminos:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+#grupo-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+#tratamiento_datos {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+#label-tratamiento {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+#grupo-boton-enviar {
+    grid-column: 1 / -1;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+#boton-enviar {
+    width: 100%;
+    min-height: 54px;
+    border: none;
+    border-radius: 13px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.22);
+    transition: 0.25s ease;
+}
+
+#boton-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.30);
+    filter: brightness(1.05);
+}
+
+#boton-enviar:active {
+    transform: translateY(0);
+}
+
+.form-group input:required:invalid:not(:placeholder-shown) {
+    border-color: rgba(220, 38, 38, 0.5);
+}
+
+.form-group input:required:valid {
+    border-color: rgba(5, 150, 105, 0.35);
+}
+
+input:focus-visible,
+select:focus-visible,
+#boton-enviar:focus-visible,
+#enlace-terminos:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 2px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    #formulario-registro {
+        grid-template-columns: 1fr;
+        padding: 30px 22px;
+        border-radius: 20px;
+    }
+
+    #grupo-tratamiento-datos,
+    #grupo-boton-enviar {
+        grid-column: auto;
+    }
+
+    #titulo-principal {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    #formulario-registro {
+        padding: 25px 17px;
+        border-radius: 17px;
+        gap: 19px;
+    }
+
+    #titulo-principal {
+        font-size: 26px;
+    }
+
+    .form-group input:not([type="checkbox"]),
+    .form-group select {
+        min-height: 48px;
+        font-size: 14px;
+    }
+
+    #grupo-tratamiento-datos {
+        padding: 20px 16px;
+    }
+
+    #label-tratamiento {
+        font-size: 11px;
+    }
+}
